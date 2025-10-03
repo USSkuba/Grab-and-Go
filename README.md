@@ -43,7 +43,7 @@
 
 ### Example Output:
 ```
-Queen's Landing, C4, Jita 14, Hek 16, Amarr 5, Rens 16, Dodixie 10
+Egmur, 0.7, C4, Jita 14, Hek 16, Amarr 5, Rens 16, Dodixie 10
 ```
 
 ---
