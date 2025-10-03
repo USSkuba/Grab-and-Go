@@ -179,14 +179,6 @@ Each function has multiple fallback strategies, so updating one selector usually
 
 ---
 
-## 📸 Screenshots
-
-![Extension UI](https://github.com/user-attachments/assets/31775ead-7a60-4847-906c-05c238d1ebda)
-![Theme Selection](https://github.com/user-attachments/assets/147d8f1c-937b-4452-ace7-f491c48ca9df)
-![Discord Integration](https://github.com/user-attachments/assets/831295f1-99bb-48df-96a0-b5a3d1ac03bc)
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please:
