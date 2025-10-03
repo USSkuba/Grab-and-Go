@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Grab-and-Go",
+  "version": "1.0.3",
+  "description": "A tool designed to simplify the process of sharing EVE Online wormhole system information and trade hub distances. Click to copy system data to clipboard or send directly to Discord.",
+  
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon16.png"
+  },
+  
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  
+  "host_permissions": [
+    "https://wormholes.new-eden.io/*"
+  ]
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grab-and-Go</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===================================
+       GRAB-AND-GO EXTENSION STYLES
+       EVE Online Wormhole System Data Copier
+       =================================== */
+    
+    /* Base container styling */
+    html, body {
+      width: 400px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      justify-content: flex-start;
+    }
+
+    /* Title box at the top of the extension */
+    .titleBox {
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .titleBox a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .titleBox a:hover {
+      text-decoration: underline;
+    }
+
+    /* Version number display */
+    .titleBox span.version {
+      font-size: 14px;
+      display: block;
+      margin-top: 5px;
+    }
+
+    /* Main content area */
+    #content {
+      flex-grow: 1;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* System name and security status display */
+    #headerData {
+      font-size: 26px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    /* Jump distances display */
+    #number {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Button styling - Copy and Discord buttons */
+    #copyButton,
+    #sendToDiscordButton {
+      width: 200px;
+      padding: 10px 0;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      transition: background 0.3s, box-shadow 0.3s, opacity 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+
+    /* Discord button - uses Discord brand colors */
+    #sendToDiscordButton {
+      background: linear-gradient(135deg, #7289da, #5b6eae);
+      color: white;
+    }
+
+    /* Copy button - uses green color scheme */
+    #copyButton {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    /* Hover effects */
+    #sendToDiscordButton:hover:not(:disabled) {
+      background: linear-gradient(135deg, #5b6eae, #7289da);
+    }
+
+    #copyButton:hover:not(:disabled) {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Disabled button state */
+    #copyButton:disabled,
+    #sendToDiscordButton:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    /* "Copied!" notification that appears after copying */
+    .copy-notification {
+      position: absolute;
+      top: 95px;
+      right: 172px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out, visibility 0.5s;
+      z-index: 1000;
+      width: auto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .copy-notification.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Theme selector dropdown */
+    #themeDropdown {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      padding: 2px;
+      border-radius: 16px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    /* Discord webhook URL input field */
+    #webhookUrl {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      padding: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      width: calc(100% - 250px);
+      margin-bottom: 10px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 400px) {
+      body {
+        width: 100%;
+        height: auto;
+      }
+
+      .titleBox {
+        font-size: 22px;
+        padding: 10px;
+      }
+      
+      #sendToDiscordButton,
+      #copyButton {
+        font-size: 16px;
+        padding: 8px 15px;
+      }
+
+      #number {
+        font-size: 16px;
+      }
+
+      #webhookUrl {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Title Box with GitHub link -->
+  <div class="titleBox" id="titleBox">
+    <a href="https://github.com/danielobCA/QuickCopy" target="_blank">Grab-and-Go</a>
+    <br>
+    <span class="version">(v1.0.3)</span>
+  </div>
+
+  <!-- Main content area -->
+  <div id="content">
+    <br>
+    <!-- System name and security status -->
+    <h1 id="headerData">No system selected.</h1>
+    
+    <!-- Jump distances to trade hubs -->
+    <p id="number"></p>
+    
+    <!-- Action buttons container -->
+    <div id="buttonContainer">
+      <!-- Copy to clipboard button -->
+      <button id="copyButton">Copy to Clipboard</button>
+      <br>
+      
+      <!-- Send to Discord button -->
+      <button id="sendToDiscordButton">Send to Discord</button>
+      <br>
+      
+      <!-- Discord webhook URL input 
+           To get a Discord webhook URL:
+           1. Go to your Discord server
+           2. Right-click on a channel → Edit Channel
+           3. Go to Integrations → Webhooks → New Webhook
+           4. Copy the Webhook URL and paste it here
+      -->
+      <input type="text" id="webhookUrl" placeholder="Discord Webhook URL" />
+      <br>
+      <br>
+    </div>
+
+    <!-- Theme selector dropdown -->
+    <div id="themeSelector">
+      <select id="themeDropdown">
+        <option value="default">Default</option>
+        <option value="dark">Slate</option>   
+        <option value="glacier">Glacier</option>  
+        <option value="amarr">Amarr</option>
+        <option value="caldari">Caldari</option> 
+        <option value="gallente">Gallente</option>  
+        <option value="minmatar">Minmatar</option>   
+        <option value="SEND">Ascendants</option>   
+        <option value="pink">Cotton Candy</option>      
+        <option value="tyrian">Tyrian</option>              
+      </select>
+    </div>
+    <br>
+    
+    <!-- Notification that appears when text is copied -->
+    <div class="copy-notification" id="copyNotification">Copied!</div>
+  </div>
+
+  <!-- Main JavaScript functionality -->
+  <script src="popup.js"></script>
+</body>
+</html>

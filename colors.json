@@ -1,0 +1,287 @@
+{
+  "default": {
+    "backgroundGradient": {
+      "start": "#ff914d",
+      "end": "#ffde59"
+    },
+    "titleBox": {
+      "backgroundColor": "#ff914d",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#4CAF50",
+      "backgroundGradientEnd": "#388E3C",
+      "hoverColor": "#45a049",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#333333"
+    },
+    "number": {
+      "fontColor": "#666666"
+    },
+    "notification": {
+      "backgroundColor": "#4CAF50",
+      "fontColor": "#ffffff"
+    }
+  },
+  "dark": {
+    "backgroundGradient": {
+      "start": "#333333",
+      "end": "#000000"
+    },
+    "titleBox": {
+      "backgroundColor": "#444444",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#666666",
+      "backgroundGradientEnd": "#333333",
+      "hoverColor": "#555555",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#cccccc"
+    },
+    "notification": {
+      "backgroundColor": "#666666",
+      "fontColor": "#ffffff"
+    }
+  },
+  "pink": {
+    "backgroundGradient": {
+      "start": "#ffb3c9",
+      "end": "#ff8fae"
+    },
+    "titleBox": {
+      "backgroundColor": "#ffb3c9",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#f8a3c1",
+      "backgroundGradientEnd": "#e57399",
+      "hoverColor": "#f48fb1",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#ffffff"
+    },
+    "notification": {
+      "backgroundColor": "#f8a3c1",
+      "fontColor": "#ffffff"
+    }
+  },
+  "amarr": {
+    "backgroundGradient": {
+      "start": "#b08d57",
+      "end": "#8a6d3b"
+    },
+    "titleBox": {
+      "backgroundColor": "#b08d57",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#a27b47",
+      "backgroundGradientEnd": "#8a6d3b",
+      "hoverColor": "#916f46",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#e0c591"
+    },
+    "notification": {
+      "backgroundColor": "#a27b47",
+      "fontColor": "#ffffff"
+    }
+  },
+  "caldari": {
+    "backgroundGradient": {
+      "start": "#1b3d6d",
+      "end": "#0f253f"
+    },
+    "titleBox": {
+      "backgroundColor": "#1b3d6d",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#173356",
+      "backgroundGradientEnd": "#0f253f",
+      "hoverColor": "#142e4a",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#9bbcd1"
+    },
+    "notification": {
+      "backgroundColor": "#173356",
+      "fontColor": "#ffffff"
+    }
+  },
+  "gallente": {
+    "backgroundGradient": {
+      "start": "#2e8b57",
+      "end": "#20633b"
+    },
+    "titleBox": {
+      "backgroundColor": "#2e8b57",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#26764a",
+      "backgroundGradientEnd": "#20633b",
+      "hoverColor": "#238748",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#a9c6b7"
+    },
+    "notification": {
+      "backgroundColor": "#26764a",
+      "fontColor": "#ffffff"
+    }
+  },
+  "minmatar": {
+    "backgroundGradient": {
+      "start": "#8b0000",
+      "end": "#5c0000"
+    },
+    "titleBox": {
+      "backgroundColor": "#8b0000",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#760000",
+      "backgroundGradientEnd": "#5c0000",
+      "hoverColor": "#690000",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#ff6666"
+    },
+    "notification": {
+      "backgroundColor": "#760000",
+      "fontColor": "#ffffff"
+    }
+  },
+  "SEND": {
+    "backgroundGradient": {
+      "start": "#273a10",
+      "end": "#2ab061"
+    },
+    "titleBox": {
+      "backgroundColor": "#273a10",
+      "fontColor": "#b3ba55"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#2c6637",
+      "backgroundGradientEnd": "#454200",
+      "hoverColor": "#b3ba55",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#b3ba55"
+    },
+    "notification": {
+      "backgroundColor": "#454200",
+      "fontColor": "#ffffff"
+    }
+  },
+  "glacier": {
+    "backgroundGradient": {
+      "start": "#f0f0f0",
+      "end": "#dcdcdc"
+    },
+    "titleBox": {
+      "backgroundColor": "#f0f0f0",
+      "fontColor": "#333333"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#e6e6e6",
+      "backgroundGradientEnd": "#cccccc",
+      "hoverColor": "#bfbfbf",
+      "fontColor": "#333333"
+    },
+    "headerData": {
+      "fontColor": "#333333"
+    },
+    "number": {
+      "fontColor": "#666666"
+    },
+    "notification": {
+      "backgroundColor": "#e6e6e6",
+      "fontColor": "#333333"
+    }
+  },
+     "nebula": {
+    "backgroundGradient": {
+      "start": "#4b0082",
+      "end": "#6a0dad"
+    },
+    "titleBox": {
+      "backgroundColor": "#4b0082",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#5d3fd3",
+      "backgroundGradientEnd": "#4b0082",
+      "hoverColor": "#8a2be2",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#dcdcdc"
+    },
+    "notification": {
+      "backgroundColor": "#5d3fd3",
+      "fontColor": "#ffffff"    }
+  },
+  "tyrian": {
+    "backgroundGradient": {
+      "start": "#66023c",
+      "end": "#400126"
+    },
+    "titleBox": {
+      "backgroundColor": "#66023c",
+      "fontColor": "#ffffff"
+    },
+    "copyButton": {
+      "backgroundGradientStart": "#5a0236",
+      "backgroundGradientEnd": "#400126",
+      "hoverColor": "#520234",
+      "fontColor": "#ffffff"
+    },
+    "headerData": {
+      "fontColor": "#ffffff"
+    },
+    "number": {
+      "fontColor": "#e0b3d1"
+    },
+    "notification": {
+      "backgroundColor": "#5a0236",
+      "fontColor": "#ffffff"
+    }
+  }
+}
