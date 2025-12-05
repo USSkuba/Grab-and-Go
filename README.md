@@ -17,14 +17,14 @@
 ## 🔧 Installation Guide
 
 ### For Google Chrome:
-1. Download the [latest release](https://github.com/danielobCA/QuickCopy/releases)
+1. Download the [latest release](https://github.com/USSkuba/Grab-and-Go/releases)
 2. Go to `chrome://extensions/`
 3. Enable **Developer mode** (toggle in top-right corner)
 4. Click **Load unpacked**
 5. Select the folder with the downloaded extension files
 
 ### For Microsoft Edge:
-1. Download the [latest release](https://github.com/danielobCA/QuickCopy/releases)
+1. Download the [latest release](https://github.com/USSkuba/Grab-and-Go/releases)
 2. Go to `edge://extensions/`
 3. Enable **Developer mode** (toggle in left sidebar)
 4. Click **Load unpacked**
