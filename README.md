@@ -216,7 +216,7 @@ Rebranded and enhanced as **Grab-and-Go** with improved scraping logic and exten
 
 - [EVE Online](https://www.eveonline.com/)
 - [Wormhole Maps](https://wormholes.new-eden.io/maps)
-- [GitHub Repository](https://github.com/danielobCA/QuickCopy)
+- [GitHub Repository](https://github.com/USSkuba/Grab-and-Go)
 
 ---
 
